@@ -7,15 +7,14 @@ import { Header } from './components/common'
 import LibraryList from './components/LibraryList';
 
 const App = () => {
-  return(
+  return (
     <Provider store={createStore(reducers)}>
-      <View style={ { flex:1 } }>
-        <Header headerText='Content'/>
+      <View style={{ flex: 1 }}>
+        <Header headerText="Content"/>
         <LibraryList />
       </View>
     </Provider>
-    
   );
-}
+};
 
 export default App;
